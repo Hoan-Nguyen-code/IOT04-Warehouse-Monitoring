@@ -1,0 +1,420 @@
+
+/* ========================================
+   QUAN LY CANH BAO - IOT04
+======================================== */
+
+.canhbao-page {
+  width: 100%;
+  min-width: 0;
+  color: #e2e8f0;
+}
+
+/* ===== HEADER ===== */
+
+.canhbao-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.canhbao-header h1 {
+  margin: 0 0 8px;
+  color: #f8fafc;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.canhbao-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== BUTTONS ===== */
+
+.canhbao-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.canhbao-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.canhbao-btn-primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.canhbao-btn-secondary {
+  background: #1e293b;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+.canhbao-btn-secondary:hover:not(:disabled) {
+  background: #334155;
+  color: #ffffff;
+}
+
+.canhbao-btn-success {
+  padding: 8px 12px;
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #4ade80;
+  font-size: 12px;
+}
+
+.canhbao-btn-success:hover:not(:disabled) {
+  background: rgba(34, 197, 94, 0.22);
+}
+
+.canhbao-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== MESSAGES ===== */
+
+.canhbao-error,
+.canhbao-success {
+  margin-bottom: 20px;
+  padding: 13px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.canhbao-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+
+.canhbao-success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: #86efac;
+}
+
+/* ===== STATISTICS ===== */
+
+.canhbao-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.canhbao-stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  padding: 20px;
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 13px;
+}
+
+.canhbao-stat > svg {
+  flex-shrink: 0;
+  color: #60a5fa;
+}
+
+.canhbao-stat:nth-child(2) > svg {
+  color: #fbbf24;
+}
+
+.canhbao-stat:nth-child(3) > svg {
+  color: #4ade80;
+}
+
+.canhbao-stat > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.canhbao-stat span {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.canhbao-stat strong {
+  color: #f8fafc;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* ===== PANELS ===== */
+
+.canhbao-panel {
+  min-width: 0;
+  margin-bottom: 22px;
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.canhbao-panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 22px;
+  border-bottom: 1px solid #29364d;
+}
+
+.canhbao-panel-title h2 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.canhbao-panel-title > span {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* ===== FILTERS ===== */
+
+.canhbao-filters {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+  gap: 16px;
+  padding: 22px;
+}
+
+.canhbao-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.canhbao-field > span {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.canhbao-field input,
+.canhbao-field select {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font: inherit;
+  font-size: 13px;
+  color-scheme: dark;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.canhbao-field input:focus,
+.canhbao-field select:focus {
+  border-color: #3b82f6;
+}
+
+.canhbao-field input::placeholder {
+  color: #64748b;
+}
+
+.canhbao-field select {
+  cursor: pointer;
+}
+
+.canhbao-field select option {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.canhbao-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.canhbao-search > svg {
+  position: absolute;
+  left: 12px;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.canhbao-search input {
+  padding-left: 39px;
+}
+
+/* ===== TABLE ===== */
+
+.canhbao-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.canhbao-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.canhbao-table thead {
+  background: #1e293b;
+}
+
+.canhbao-table th {
+  padding: 15px 17px;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.canhbao-table td {
+  padding: 16px 17px;
+  border-top: 1px solid #29364d;
+  color: #cbd5e1;
+  font-size: 13px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.canhbao-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.canhbao-table tbody tr:hover {
+  background: rgba(51, 65, 85, 0.35);
+}
+
+.canhbao-table .canhbao-name {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.canhbao-table .canhbao-description {
+  min-width: 230px;
+  max-width: 320px;
+  white-space: normal;
+  line-height: 1.6;
+}
+
+/* ===== STATUS BADGES ===== */
+
+.canhbao-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.canhbao-badge-new {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fbbf24;
+}
+
+.canhbao-badge-done {
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: #4ade80;
+}
+
+.canhbao-no-action {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* ===== EMPTY STATE ===== */
+
+.canhbao-empty {
+  margin: 0;
+  padding: 45px 20px;
+  color: #94a3b8;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ===== NOTE ===== */
+
+.canhbao-note {
+  margin: 4px 0 20px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1200px) {
+  .canhbao-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .canhbao-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .canhbao-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .canhbao-header h1 {
+    font-size: 23px;
+  }
+
+  .canhbao-header > button {
+    align-self: flex-start;
+  }
+
+  .canhbao-filters {
+    padding: 16px;
+  }
+
+  .canhbao-panel-title {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .canhbao-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .canhbao-panel-title {
+    flex-wrap: wrap;
+  }
+}

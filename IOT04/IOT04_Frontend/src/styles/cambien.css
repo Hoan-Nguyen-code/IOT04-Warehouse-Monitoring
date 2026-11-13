@@ -1,0 +1,410 @@
+
+/* ===== TRANG QUAN LY CAM BIEN ===== */
+
+.cambien-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ===== HEADER ===== */
+
+.cambien-header,
+.cambien-actions,
+.cambien-table-heading,
+.cambien-row-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cambien-header {
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cambien-header h1 {
+  margin: 0 0 8px;
+  font-size: 26px;
+  color: #f8fafc;
+}
+
+.cambien-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.cambien-actions {
+  gap: 10px;
+}
+
+/* ===== BUTTON ===== */
+
+.cambien-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border-radius: 9px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cambien-btn-primary {
+  background: #0284c7;
+  color: #fff;
+}
+
+.cambien-btn-primary:hover:not(:disabled) {
+  background: #0369a1;
+}
+
+.cambien-btn-secondary {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.cambien-btn-secondary:hover:not(:disabled) {
+  background: #334155;
+}
+
+.cambien-btn:disabled,
+.cambien-row-actions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ===== THONG BAO ===== */
+
+.cambien-error {
+  padding: 13px 16px;
+  border-radius: 9px;
+  background: #450a0a;
+  border: 1px solid #7f1d1d;
+  color: #fca5a5;
+  font-size: 13px;
+}
+
+.cambien-success {
+  padding: 13px 16px;
+  border-radius: 9px;
+  background: #064e3b;
+  color: #a7f3d0;
+  font-size: 13px;
+}
+
+/* ===== THONG KE ===== */
+
+.cambien-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.cambien-stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.cambien-stat > svg {
+  color: #38bdf8;
+  flex-shrink: 0;
+}
+
+.cambien-stat > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.cambien-stat span {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.cambien-stat strong {
+  color: #f8fafc;
+  font-size: 27px;
+}
+
+/* ===== DANH SACH ===== */
+
+.cambien-table-wrapper {
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 14px;
+  padding: 24px;
+  min-width: 0;
+}
+
+.cambien-table-heading {
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.cambien-table-heading h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+.cambien-table-heading span {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.cambien-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cambien-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cambien-table th,
+.cambien-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #29364d;
+  font-size: 13px;
+}
+
+.cambien-table th {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.cambien-table td {
+  color: #e2e8f0;
+}
+
+.cambien-name {
+  font-weight: 600;
+  color: #f8fafc !important;
+}
+
+.cambien-message {
+  padding: 35px 10px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* ===== TRANG THAI ===== */
+
+.cambien-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cambien-status-active {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+.cambien-status-inactive {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+/* ===== THAO TAC ===== */
+
+.cambien-row-actions {
+  gap: 8px;
+}
+
+.cambien-row-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+.cambien-row-actions button:hover:not(:disabled) {
+  background: #334155;
+}
+
+.cambien-row-actions button:last-child {
+  color: #f87171;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .cambien-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .cambien-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cambien-actions {
+    flex-wrap: wrap;
+  }
+
+  .cambien-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cambien-table-wrapper {
+    padding: 16px;
+  }
+
+  .cambien-stat {
+    padding: 18px;
+  }
+}
+
+/* ===== MODAL QUAN LY CAM BIEN ===== */
+
+.cambien-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.cambien-modal {
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #151f32;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  color: #f8fafc;
+}
+
+.cambien-modal-header,
+.cambien-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+}
+
+.cambien-modal-header {
+  border-bottom: 1px solid #29364d;
+}
+
+.cambien-modal-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.cambien-modal-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #f8fafc;
+  cursor: pointer;
+}
+
+.cambien-modal-close:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.cambien-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 24px;
+}
+
+.cambien-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cambien-field span {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cambien-field input,
+.cambien-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 13px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #f8fafc;
+  font: inherit;
+  font-size: 14px;
+}
+
+.cambien-field input:focus,
+.cambien-field select:focus {
+  outline: 2px solid #0284c7;
+  outline-offset: 1px;
+}
+
+.cambien-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+.cambien-modal-footer {
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px 24px;
+  border-top: 1px solid #29364d;
+}
+
+@media (max-width: 700px) {
+  .cambien-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cambien-modal-header,
+  .cambien-modal-footer {
+    padding: 16px;
+  }
+
+  .cambien-form-body {
+    padding: 16px;
+  }
+}

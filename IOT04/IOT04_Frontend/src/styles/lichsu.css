@@ -1,0 +1,393 @@
+
+/* ========================================
+   LICH SU DU LIEU CAM BIEN - IOT04
+======================================== */
+
+.lichsu-page {
+  width: 100%;
+  min-width: 0;
+  color: #e2e8f0;
+}
+
+/* ===== HEADER ===== */
+
+.lichsu-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.lichsu-header h1 {
+  margin: 0 0 8px;
+  color: #f8fafc;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.lichsu-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== BUTTONS ===== */
+
+.lichsu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lichsu-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.lichsu-btn-primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.lichsu-btn-secondary {
+  background: #1e293b;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+.lichsu-btn-secondary:hover:not(:disabled) {
+  background: #334155;
+  color: #ffffff;
+}
+
+.lichsu-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ===== ERROR ===== */
+
+.lichsu-error {
+  margin-bottom: 20px;
+  padding: 13px 16px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  border-radius: 10px;
+  color: #fca5a5;
+  font-size: 14px;
+}
+
+/* ===== STATISTICS ===== */
+
+.lichsu-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.lichsu-stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  padding: 20px;
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 13px;
+}
+
+.lichsu-stat > svg {
+  flex-shrink: 0;
+  color: #60a5fa;
+}
+
+.lichsu-stat > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.lichsu-stat span {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.lichsu-stat strong {
+  color: #f8fafc;
+  font-size: 24px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* ===== PANELS ===== */
+
+.lichsu-panel {
+  min-width: 0;
+  margin-bottom: 22px;
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.lichsu-panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 22px;
+  border-bottom: 1px solid #29364d;
+}
+
+.lichsu-panel-title h2 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.lichsu-panel-title > span {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* ===== FILTERS ===== */
+
+.lichsu-filters {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 22px;
+}
+
+.lichsu-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.lichsu-field > span {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lichsu-field input,
+.lichsu-field select {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font: inherit;
+  font-size: 13px;
+  color-scheme: dark;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.lichsu-field input:focus,
+.lichsu-field select:focus {
+  border-color: #3b82f6;
+}
+
+.lichsu-field input::placeholder {
+  color: #64748b;
+}
+
+.lichsu-field select {
+  cursor: pointer;
+}
+
+.lichsu-field select option {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.lichsu-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.lichsu-search > svg {
+  position: absolute;
+  left: 12px;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.lichsu-search input {
+  padding-left: 39px;
+}
+
+/* ===== TABLE ===== */
+
+.lichsu-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.lichsu-table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.lichsu-table thead {
+  background: #1e293b;
+}
+
+.lichsu-table th {
+  padding: 15px 17px;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.lichsu-table td {
+  padding: 16px 17px;
+  border-top: 1px solid #29364d;
+  color: #cbd5e1;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.lichsu-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.lichsu-table tbody tr:hover {
+  background: rgba(51, 65, 85, 0.35);
+}
+
+.lichsu-table .lichsu-name {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.lichsu-table .lichsu-danger {
+  color: #f87171;
+  font-weight: 700;
+}
+
+/* ===== STATUS BADGES ===== */
+
+.lichsu-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.lichsu-badge-normal {
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.lichsu-badge-warning {
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* ===== EMPTY STATE ===== */
+
+.lichsu-empty {
+  padding: 45px 20px;
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ===== NOTE ===== */
+
+.lichsu-note {
+  margin: 4px 0 20px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1400px) {
+  .lichsu-filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1100px) {
+  .lichsu-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .lichsu-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lichsu-header h1 {
+    font-size: 23px;
+  }
+
+  .lichsu-header > button {
+    align-self: flex-start;
+  }
+
+  .lichsu-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 16px;
+  }
+
+  .lichsu-panel-title {
+    padding: 16px;
+  }
+
+  .lichsu-stat {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .lichsu-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .lichsu-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .lichsu-panel-title {
+    flex-wrap: wrap;
+  }
+}

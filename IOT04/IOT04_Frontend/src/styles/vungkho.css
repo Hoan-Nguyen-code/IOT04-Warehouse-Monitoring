@@ -1,0 +1,277 @@
+
+.vung-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.vung-top,
+.vung-actions,
+.vung-panel-title,
+.vung-row-actions,
+.vung-modal-header,
+.vung-modal-footer {
+  display: flex;
+  align-items: center;
+}
+
+.vung-top {
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.vung-top h1 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.vung-top p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.vung-actions {
+  gap: 10px;
+}
+
+.vung-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border-radius: 9px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vung-btn-primary {
+  background: #0284c7;
+  color: #fff;
+}
+
+.vung-btn-primary:hover {
+  background: #0369a1;
+}
+
+.vung-btn-secondary {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.vung-btn-secondary:hover {
+  background: #334155;
+}
+
+.vung-btn:disabled,
+.vung-icon-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.vung-panel {
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.vung-panel-title {
+  gap: 10px;
+  color: #38bdf8;
+  margin-bottom: 18px;
+}
+
+.vung-panel-title h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+.vung-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.vung-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.vung-table th,
+.vung-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #29364d;
+  font-size: 13px;
+}
+
+.vung-table th {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.vung-table td {
+  color: #e2e8f0;
+}
+
+.vung-name {
+  font-weight: 600;
+}
+
+.vung-row-actions {
+  gap: 8px;
+}
+
+.vung-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+.vung-icon-btn:hover {
+  background: #334155;
+}
+
+.vung-delete {
+  color: #f87171;
+}
+
+.vung-empty {
+  padding: 35px 10px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.vung-success,
+.vung-error {
+  padding: 13px 16px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.vung-success {
+  background: #064e3b;
+  color: #a7f3d0;
+}
+
+.vung-error {
+  background: #450a0a;
+  color: #fca5a5;
+  border: 1px solid #7f1d1d;
+}
+
+.vung-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.vung-modal {
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #151f32;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  color: #f8fafc;
+}
+
+.vung-modal-header {
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #29364d;
+}
+
+.vung-modal-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.vung-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 24px;
+}
+
+.vung-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vung-field span {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.vung-field input,
+.vung-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 13px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #f8fafc;
+  font: inherit;
+  font-size: 14px;
+}
+
+.vung-field input:focus,
+.vung-field textarea:focus {
+  outline: 2px solid #0284c7;
+  outline-offset: 1px;
+}
+
+.vung-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+.vung-modal-footer {
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px 24px;
+  border-top: 1px solid #29364d;
+}
+
+@media (max-width: 700px) {
+  .vung-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .vung-actions {
+    flex-wrap: wrap;
+  }
+
+  .vung-panel {
+    padding: 16px;
+  }
+
+  .vung-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

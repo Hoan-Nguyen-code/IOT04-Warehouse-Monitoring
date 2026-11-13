@@ -1,0 +1,396 @@
+
+/* ========================================
+   SO SANH CAM BIEN - IOT04
+======================================== */
+
+.sosanh-page {
+  width: 100%;
+  min-width: 0;
+  color: #e2e8f0;
+}
+
+/* ===== HEADER ===== */
+
+.sosanh-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.sosanh-header h1 {
+  margin: 0 0 8px;
+  color: #f8fafc;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.sosanh-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== BUTTONS ===== */
+
+.sosanh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sosanh-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.sosanh-btn-primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.sosanh-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ===== MESSAGES ===== */
+
+.sosanh-error,
+.sosanh-warning {
+  margin-bottom: 20px;
+  padding: 14px 17px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.sosanh-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+
+.sosanh-warning {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fbbf24;
+}
+
+/* ===== PANELS ===== */
+
+.sosanh-panel {
+  min-width: 0;
+  margin-bottom: 22px;
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.sosanh-panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 22px;
+  border-bottom: 1px solid #29364d;
+}
+
+.sosanh-panel-title h2 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+/* ===== SENSOR SELECTORS ===== */
+
+.sosanh-selectors {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: end;
+  gap: 22px;
+  padding: 22px;
+}
+
+.sosanh-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.sosanh-field span {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sosanh-field select {
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  padding: 0 13px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font: inherit;
+  font-size: 13px;
+  color-scheme: dark;
+  outline: none;
+  cursor: pointer;
+}
+
+.sosanh-field select:focus {
+  border-color: #3b82f6;
+}
+
+.sosanh-field select option {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.sosanh-swap-icon {
+  margin-bottom: 11px;
+  color: #60a5fa;
+}
+
+/* ===== SENSOR CARDS ===== */
+
+.sosanh-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.sosanh-card {
+  min-width: 0;
+  padding: 22px;
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 13px;
+}
+
+.sosanh-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 10px;
+}
+
+.sosanh-card-heading svg {
+  color: #60a5fa;
+}
+
+.sosanh-card-heading h3 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sosanh-card-type {
+  display: inline-flex;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 20px;
+  color: #93c5fd;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sosanh-measure {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 14px 0;
+  border-bottom: 1px solid #29364d;
+}
+
+.sosanh-measure svg {
+  flex-shrink: 0;
+  color: #38bdf8;
+}
+
+.sosanh-measure span {
+  flex: 1;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.sosanh-measure strong {
+  color: #f8fafc;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sosanh-card-time {
+  margin: 18px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* ===== DIFFERENCE STATS ===== */
+
+.sosanh-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.sosanh-stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  padding: 20px 22px;
+  background: #151f32;
+  border: 1px solid #29364d;
+  border-radius: 13px;
+}
+
+.sosanh-stat > svg {
+  flex-shrink: 0;
+  color: #60a5fa;
+}
+
+.sosanh-stat > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sosanh-stat span {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.sosanh-stat strong {
+  color: #f8fafc;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* ===== CHARTS ===== */
+
+.sosanh-chart {
+  width: 100%;
+  min-width: 0;
+  padding: 24px 18px 16px;
+  box-sizing: border-box;
+}
+
+.sosanh-chart .recharts-text {
+  font-size: 12px;
+}
+
+.sosanh-chart .recharts-default-tooltip {
+  background: #151f32 !important;
+  border: 1px solid #334155 !important;
+  border-radius: 8px !important;
+  color: #e2e8f0 !important;
+}
+
+.sosanh-chart .recharts-tooltip-label {
+  color: #f8fafc !important;
+}
+
+.sosanh-chart .recharts-legend-item-text {
+  color: #cbd5e1 !important;
+}
+
+/* ===== EMPTY STATE ===== */
+
+.sosanh-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ===== NOTE ===== */
+
+.sosanh-note {
+  margin: 4px 0 20px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1000px) {
+  .sosanh-cards,
+  .sosanh-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sosanh-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sosanh-header h1 {
+    font-size: 23px;
+  }
+
+  .sosanh-header > button {
+    align-self: flex-start;
+  }
+
+  .sosanh-selectors {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 16px;
+  }
+
+  .sosanh-swap-icon {
+    justify-self: center;
+    margin: 0;
+    transform: rotate(90deg);
+  }
+
+  .sosanh-card {
+    padding: 18px;
+  }
+
+  .sosanh-panel-title {
+    padding: 16px;
+  }
+
+  .sosanh-chart {
+    padding: 20px 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sosanh-measure strong {
+    font-size: 19px;
+  }
+
+  .sosanh-stat strong {
+    font-size: 21px;
+  }
+}
